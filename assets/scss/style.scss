@@ -1,0 +1,81 @@
+@import 'options';
+
+$white-color: #ffffff;
+$title-color: rgb(94, 94, 94);
+
+//background
+$container-back: rgb(217, 215, 215);
+$purple-color: #cdb4db;
+$blue-color: #a2d2ff;
+$pink-color: #ffafcc;
+$green-color: #80ed99;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background-color: $container-back;
+
+  .container {
+    width: 100%;
+    padding-top: 20px;
+
+    .wrapper {
+      max-width: 1440px;
+      width: 90%;
+      margin: 0 auto;
+
+      .flex-items {
+        .title {
+          text-align: center;
+          color: $title-color;
+          font-weight: normal;
+
+          .flex-title {
+            .flex-txt {
+              text-transform: uppercase;
+            }
+
+            .others-txt {
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .items-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+
+          .item1 {
+            width: 200px;
+            height: 200px;
+            background-color: $purple-color;
+          }
+
+          .item2 {
+            width: 300px;
+            height: 100px;
+            background-color: $blue-color;
+          }
+
+          .item3 {
+            width: 100px;
+            height: 300px;
+            background-color: $pink-color;
+          }
+
+          .item4 {
+            width: 100px;
+            height: 100px;
+            background-color: $green-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Flex items</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <section class="flex-items">
+          <div class="title">
+            <h2 class="flex-title">
+              <span class="flex-txt">flex</span>
+              <span class="others-txt">container tutorials</span>
+            </h2>
+          </div>
+
+          <div class="option-container">
+            <div class="custom-select" data-type="justify-content">
+              <select>
+                <option value="justify-content">justify content</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+                <option value="stretch">stretch</option>
+              </select>
+            </div>
+
+            <div class="custom-select" data-type="align-items">
+              <select>
+                <option value="align-items">align Items</option>
+                <option value="stretch">stretch</option>
+                <option value="center">center</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="baseline">baseline</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+              </select>
+            </div>
+
+            <div class="custom-select" data-type="flex-direction">
+              <select>
+                <option value="flex-direction">flex direction</option>
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+              </select>
+            </div>
+
+            <div class="checkbox-wrapper-33">
+              <label class="checkbox">
+                <input
+                  class="checkbox__trigger visuallyhidden"
+                  type="checkbox"
+                />
+                <span class="checkbox__symbol">
+                  <svg
+                    aria-hidden="true"
+                    class="icon-checkbox"
+                    width="28px"
+                    height="28px"
+                    viewBox="0 0 28 28"
+                    version="1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 14l8 7L24 7"></path>
+                  </svg>
+                </span>
+                <p class="checkbox__textwrapper">Flex Wrap</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="items-container">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/options.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
